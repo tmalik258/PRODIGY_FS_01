@@ -28,7 +28,7 @@ class APIAuthTest(TestCase):
 	
 	def test_login_user_api(self):
 		response = self.client.post("/api/auth/login/", {
-			"email": "test1@example.com",
+			"username": "test1",
 			"password": "micknmouse1"
 		})
 
